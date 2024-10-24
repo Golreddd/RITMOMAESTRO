@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎶 Ritmo Maestro 🎶</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="welcome-screen">
+    <h1>✨ ¡Bienvenido a Ritmo Maestro! ✨</h1>
+    <p>
+        Ritmo Maestro es un juego de memoria musical donde debes seguir y repetir secuencias de sonidos y colores, que se vuelven más complejas con cada nivel.</p>
+    <button id="startButton">🎮 ¡Comenzar! 🎮</button>
+  </div>
+
+  <div class="game-container" style="display: none;">
+    <h1>✨  Ritmo Maestro  ✨</h1>
+    <div id="instructions">Prepárate para seguir el ritmo con estilo.</div>
+    
+    <div class="button-grid">
+      <button class="game-button" id="btn1"></button>
+      <button class="game-button" id="btn2"></button>
+      <button class="game-button" id="btn3"></button>
+      <button class="game-button" id="btn4"></button>
+    </div>
+    
+    <div id="start-button">
+      <button id="startGame">🎮 ¡Empezar A Jugar! 🎮</button>
+    </div>
+
+    <div id="level-display">Nivel: <span id="level">1</span></div>
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
